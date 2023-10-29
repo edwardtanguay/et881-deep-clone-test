@@ -7,7 +7,11 @@ const obj1 = {
 	scores: [1, 2, 3, 4, 5],
 	config: {
 		login: 'hans',
-		password: 'hans123'
+		passwords: {
+			first: '111',
+			second: '222',
+			third: '333'
+		}
 	}
 }
 
@@ -18,10 +22,13 @@ const obj2 = tools.getClone(obj1);
 obj2.firstName = 'nnn';
 obj2.age = 0;
 obj2.scores = [0, 0, 0];
-obj2.config = {
-	login: 'nnn',
-	password: 'nnn'
-}
+obj2.firstName = 'new';
+obj2.age = 0;
+obj2.scores = [0, 0, 0];
+obj2.config.login = 'new';
+obj2.config.passwords.first = 'new';
+obj2.config.passwords.second = 'new';
+obj2.config.passwords.third = 'new';
 
 // see if to what extent the original object was changed or not
 console.log('obj1', obj1);

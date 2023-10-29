@@ -9,13 +9,13 @@ const obj1 = {
 	scores: [1, 2, 3, 4, 5],
 	config: {
 		login: 'hans',
-	passwords: {
-		first: '111',
-		second: '222',
-		third: '333'
+		passwords: {
+			first: '111',
+			second: '222',
+			third: '333'
+		}
 	}
-	}
-}
+};
 
 // copy/clone object
 const obj2 = tools.getClone(obj1);
@@ -24,15 +24,10 @@ const obj2 = tools.getClone(obj1);
 obj2.firstName = 'new';
 obj2.age = 0;
 obj2.scores = [0, 0, 0];
-obj2.config = {
-	login: 'new',
-	passwords: {
-		first: 'new',
-		second: 'new',
-		third: 'new'
-	}
-
-}
+obj2.config.login = 'new';
+obj2.config.passwords.first = 'new';
+obj2.config.passwords.second = 'new';
+obj2.config.passwords.third = 'new';
 
 appElem.innerHTML = `
 <h2>obj1</h2>
