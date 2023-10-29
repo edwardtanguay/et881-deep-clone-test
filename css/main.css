@@ -1,0 +1,10 @@
+.container {
+	display: flex;
+	gap: 1rem;
+}
+
+section {
+	background-color: #eee;
+	padding: 1rem;
+	font-family: courier;
+}

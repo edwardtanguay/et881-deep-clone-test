@@ -4,7 +4,7 @@ import * as tools from './js/tools.js';
 const obj1 = {
 	firstName: 'Hans',
 	age: 45,
-	scores: [1, 2, 3, 4, 5],
+	scores: [1, 2, 3],
 	config: {
 		login: 'hans',
 		passwords: {
@@ -21,10 +21,9 @@ const obj2 = tools.getClone(obj1);
 // change copy/clone
 obj2.firstName = 'nnn';
 obj2.age = 0;
-obj2.scores = [0, 0, 0];
-obj2.firstName = 'new';
-obj2.age = 0;
-obj2.scores = [0, 0, 0];
+obj2.scores[0] = 0;
+obj2.scores[1] = 0;
+obj2.scores[2] = 0;
 obj2.config.login = 'new';
 obj2.config.passwords.first = 'new';
 obj2.config.passwords.second = 'new';
